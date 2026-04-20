@@ -1,5 +1,6 @@
 {
   "name": "@sudobility/testomniac-bot",
+  "description": "Testomniac GitHub webhook and code review bot",
   "version": "0.1.0",
   "license": "BUSL-1.1",
   "type": "module",
