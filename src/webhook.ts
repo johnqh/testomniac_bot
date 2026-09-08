@@ -5,7 +5,11 @@ import { reviewDiff } from "./reviewer.js";
 export function registerWebhooks() {
   githubApp.webhooks.on(
     ["pull_request.opened", "pull_request.synchronize"],
-    async ({ payload }: EmitterWebhookEvent<"pull_request">) => {
+    async ({
+      payload,
+    }: EmitterWebhookEvent<
+      "pull_request.opened" | "pull_request.synchronize"
+    >) => {
       const { pull_request: pr, repository, installation } = payload;
 
       if (!installation) {

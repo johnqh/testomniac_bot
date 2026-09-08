@@ -1,7 +1,7 @@
 {
   "name": "@sudobility/testomniac-bot",
   "description": "Testomniac GitHub webhook and code review bot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "BUSL-1.1",
   "type": "module",
   "scripts": {
@@ -18,5 +18,8 @@
   "devDependencies": {
     "@types/bun": "^1.2.5",
     "typescript": "^5.7.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

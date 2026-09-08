@@ -1,5 +1,10 @@
 # testomniac_bot
 
+> **Git policy — never auto-commit or auto-push.** Leave your work in the working tree.
+> Run `git commit`, `git push`, `gh pr create`, or `scripts/push_all.sh` **only when the user
+> explicitly asks in that turn**. Approval for an earlier change does not carry forward, and
+> finishing a task is not permission to commit it.
+
 GitHub App bot that reviews pull requests using Claude.
 
 ## Tech Stack
@@ -40,3 +45,7 @@ Requires `.env` — see `.env.example` for required vars. `GITHUB_PRIVATE_KEY` i
 ## Related Projects
 
 Part of the testomniac family.
+
+## Git Workflow
+
+- Do not use feature branches for code changes. Always stay on the current branch.
